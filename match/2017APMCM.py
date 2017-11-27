@@ -2,7 +2,7 @@
 """
 Created on Thu Nov 23 08:42:35 2017
 
-Author: JingwangL
+Author: Jingwang Li
 Email : 619620054@qq.com
 Blog  : www.jingwangl.com
 
@@ -59,13 +59,14 @@ y=y.astype('int')
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=42)
 
 #选择算法进行训练及预测
-#Logistic
+
+##Logistic
 #classifier=LogisticRegression()
 #classifier.fit(x_train,y_train)
 #predictions=classifier.predict(x_test)
 #sum(predictions==y_test)/len(predictions)
 
-#RandForest
+##RandForest
 #调参
 #reasult=[]
 #for i in range(1,200):
@@ -87,7 +88,7 @@ print(AccuracyRate)
 #  0.961656356239
 
 
-#GBDT
+##GBDT
 #rf0 = GradientBoostingClassifier(random_state=Best_random_state)
 #rf0.fit(x_train,y_train)
 #y_predict = rf0.predict(x_test)
